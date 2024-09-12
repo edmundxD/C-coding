@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float A;
+    float B;
+    float C;
+    float D;
+    float E;
+    float F;
+    printf("Enter the first number:");
+    scanf("%f",&A);
+    printf("Enter the second number:");
+    scanf("%f",&B);
+    C=A+B;
+    D=A-B;
+    E=A*B;
+    F=A/B;
+    printf("Addition: %f",C);
+    printf("Subtraction: %f",D);
+    printf("Multiplication: %f",E);
+    printf("Division: %f",F);
+
+    return 0;
+}
