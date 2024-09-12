@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(){
+    float a;
+    printf("Enter Number 1:");
+    scanf("%f",&a);
+    if(a/2){
+        printf("Number %.1f is even",a);
+    }
+    else{
+        printf("Number %.1f is odd",a);
+    }
+}
