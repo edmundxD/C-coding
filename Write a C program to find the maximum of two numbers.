@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    float a;
+    float b;
+    printf("Enter Number 1:");
+    scanf("%f",&a);
+    printf("Enter Number 2:");
+    scanf("%f",&b);
+    
+    if(a>b){
+        printf("Number %.1f is greater than %.1f",a,b);
+    }
+    else{
+        printf("Number %.1f is greater than %.1f",b,a);
+    }
+}
