@@ -1,0 +1,11 @@
+#include <stdio.h>
+int stringLength(char *str) {
+    char *ptr = str;
+    while (*ptr) ptr++;
+    return ptr - str;
+}
+int main() {
+    char str[] = "Hello";
+    printf("Length: %d\n", stringLength(str));
+    return 0;
+}
