@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+void addBinary(char a[], char b[]) {
+    char result[20];
+    int i = strlen(a) - 1, j = strlen(b) - 1, k = 0, carry = 0;
+    while (i >= 0 || j >= 0 || carry) {
+        int sum = carry;
+        if (i >= 0) sum += a[i--] - '0';
+        if (j >= 0) sum += b[j--] - '0';
+        result[k++] = (sum % 2) + '0';
+        carry = sum / 2;
+    }
+    for (int m = k - 1; m >= 0; m--)
+        printf("%c", result[m]);
+}
+
+int main() {
+    char a[] = "1101", b[] = "1011";
+    addBinary(a, b);
+    return 0;
+}
