@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+struct Student {
+    char name[50];
+    int roll;
+    float marks;
+};
+
+void displayStudent(struct Student *student) {
+    printf("Name: %s\n", student->name);
+    printf("Roll: %d\n", student->roll);
+    printf("Marks: %.2f\n", student->marks);
+}
+
+int main() {
+    struct Student student = {"Alice", 101, 85.5};
+    displayStudent(&student);
+    return 0;
+}
