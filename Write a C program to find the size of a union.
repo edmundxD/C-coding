@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+union MyUnion {
+    int i;
+    float f;
+    char c;
+    double d;
+};
+
+int main() {
+    printf("Size of MyUnion: %zu bytes\n", sizeof(union MyUnion));
+    return 0;
+}
