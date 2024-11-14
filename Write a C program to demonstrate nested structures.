@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct Address {
+    char city[30];
+    int zip;
+};
+
+struct Student {
+    char name[50];
+    int roll;
+    struct Address address;
+};
+
+int main() {
+    struct Student student = {"Alice", 101, {"New York", 10001}};
+
+    printf("Name: %s\n", student.name);
+    printf("Roll: %d\n", student.roll);
+    printf("City: %s\n", student.address.city);
+    printf("ZIP: %d\n", student.address.zip);
+
+    return 0;
+}
