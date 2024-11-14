@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void decimalToHexadecimal(int n) {
+    char hex[32];
+    int i = 0;
+    while (n != 0) {
+        int temp = n % 16;
+        hex[i] = (temp < 10) ? (temp + '0') : (temp - 10 + 'A');
+        n = n / 16;
+        i++;
+    }
+    for (int j = i - 1; j >= 0; j--)
+        printf("%c", hex[j]);
+}
+
+int main() {
+    int n = 255;
+    decimalToHexadecimal(n);
+    return 0;
+}
