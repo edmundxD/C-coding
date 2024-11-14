@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+// Defining a structure with various data types
+struct MyStruct {
+    int i;
+    float f;
+    char c;
+    double d;
+};
+
+int main() {
+    // Calculating and displaying the size of the structure
+    printf("Size of MyStruct: %zu bytes\n", sizeof(struct MyStruct));
+    return 0;
+}
